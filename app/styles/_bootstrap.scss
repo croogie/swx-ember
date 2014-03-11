@@ -1,0 +1,66 @@
+$navbarMainHeight:  50px;
+$navbarSubHeight:   42px;
+
+$navbarTopHeight:     $navbarMainHeight + $navbarSubHeight;
+$navbarBottomHeight:  30px;
+
+html {
+  padding-top: $navbarTopHeight;
+  padding-bottom: $navbarBottomHeight;
+}
+
+.navbar-fixed-top {
+  min-height: $navbarTopHeight;
+  background-color: $bgBrown;
+  border-color: $brdGrey;
+
+  .navbar-main {
+    min-height: $navbarMainHeight;
+
+    li > a {
+      line-height: 20px;
+      padding: ($navbarMainHeight - 20)/2 30px;
+      text-transform: uppercase;
+      border-left: 1px solid $brdBrown;
+      font-weight: bold;
+      color: $fOrange;
+
+      &:hover {
+        color: $fWhite;
+      }
+    }
+
+    li.active > a {
+      background-color: $bgWhite;
+      color: $fOrange;
+
+      &:hover {
+        background-color: $bgWhite;
+        color: $fOrange;
+      }
+    }
+
+    li.inactive > a {
+      color: $fBrown;
+      cursor: default;
+    }
+  }
+
+  .navbar-sub {
+    min-height: $navbarSubHeight;
+    background-color: $bgWhite;
+
+    li > a {
+      line-height: 20px;
+      padding: ($navbarSubHeight - 20)/2 15px;
+    }
+
+    li.active > a {
+      background-color: $bgWhite;
+    }
+  }
+}
+.navbar-fixed-bottom {
+  min-height: $navbarBottomHeight;
+  background-color: $bgBrown;
+}

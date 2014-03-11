@@ -1,0 +1,10 @@
+$icon-font-path: "../styles/fonts/"; // Change the path to the fonts
+@import "variables";
+@import "bootstrap-sass/lib/bootstrap";
+@import "bootstrap";
+@import "layout";
+
+/* Put your CSS here */
+html, body {
+  background-color: $bgGrey;
+}

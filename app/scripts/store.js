@@ -1,0 +1,1 @@
+Spreadsheet.ApplicationAdapter = DS.FixtureAdapter;
