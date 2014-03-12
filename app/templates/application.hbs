@@ -1,31 +1,47 @@
 <div class="main-container">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container-fluid navbar-main">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="Slideworx"/></a>
+            </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Project</a></li>
                     <li><a href="#">Spreadsheet</a></li>
-                    <li class="inactive"><a href="#">Global Settings</a></li>
+                    <li class="disabled"><a href="#">Global Settings</a></li>
                 </ul>
             </div>
         </div>
         <div class="container-fluid navbar-sub">
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">New</a></li>
-                    <li><a href="#">Save</a></li>
-                    <li><a href="#">Export</a></li>
-                    <li><a href="#">Share</a></li>
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#"><i class="glyphicon glyphicon-file"></i> New</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-hdd"></i> Save</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-export"></i> Export</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-share"></i> Share</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">View <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-th-large"></i> View <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Tiles</a></li>
-                            <li><a href="#">Filter</a></li>
-                            <li><a href="#">Columns</a></li>
-                            <li><a href="#">Rows</a></li>
-                            <li><a href="#">Custom</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-th-large"></i> Tiles</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-filter"></i> Filter</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-stats"></i> Columns</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-align-justify"></i> Rows</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-th-list"></i> Slices</a></li>
                         </ul>
                     </li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <button type="submit" class="btn btn-xs btn-warning">EXECUTE</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="glyphicon glyphicon-cog"></i> Tabulation settings</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-inbox"></i> My Projects</a></li>
                 </ul>
             </div>
         </div>
@@ -40,9 +56,7 @@
         QUESTIONS
     </div>
     <div class="main-content">
-        <div class="child">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        </div>
+        {{outlet}}
     </div>
     <!--<div class="container-fluid" id="main">
         <div class="row" style="margin: 0;">
@@ -58,7 +72,6 @@
                     </div>
                 </div>
                 <div class="col-md-9">
-                    {{outlet}}
                 </div>
             </div>
         </div>
