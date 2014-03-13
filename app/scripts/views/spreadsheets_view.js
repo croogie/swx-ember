@@ -4,7 +4,8 @@ Spreadsheet.SpreadsheetsView = Ember.View.extend({
         var ht = jQuery('#handsontable');
         ht.handsontable({
             data: this.get('controller').get('model'),
-            minRows: 32,
+            minRows: 50,
+            minCols: 50,
             colHeaders: true,
             rowHeaders: true,
             stretchH: 'all',
