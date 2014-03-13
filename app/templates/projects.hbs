@@ -13,7 +13,7 @@
                 <h4 class="modal-title" id="myModalLabel">Modal title</h4>
             </div>
             <div class="modal-body">
-                <p>
+                <p id="content-of-modal">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros nibh, lobortis vitae tortor vel,
                     pharetra pulvinar orci. Quisque vel nunc ullamcorper, mattis sapien et, ultricies neque. Maecenas
                     ac lacus ut tellus interdum varius nec eu risus. Donec malesuada ultrices enim, a hendrerit quam
@@ -27,6 +27,8 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-info" {{action 'doit'}}>Let's do it</button>
+                <button type="button" class="btn btn-danger" {{action 'hideContent'}}>Hide content</button>
             </div>
         </div>
     </div>
