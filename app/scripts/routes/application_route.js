@@ -4,7 +4,7 @@ Spreadsheet.ApplicationRoute = Ember.Route.extend({
     model: function () {
         return {
             icons: [1, 2, 3]
-        }
+        };
     }
 
 });

@@ -1,7 +1,7 @@
 Spreadsheet.SpreadsheetsView = Ember.View.extend({
     classNames: ['take-all', 'flex-cols'],
     didInsertElement: function () {
-        var ht = $('#handsontable')
+        var ht = jQuery('#handsontable');
         ht.handsontable({
             data: this.get('controller').get('model'),
             minRows: 32,
@@ -11,7 +11,7 @@ Spreadsheet.SpreadsheetsView = Ember.View.extend({
             contextMenu: true,
             manualColumnResize: true,
             persistentState: true,
-            height: parseInt(ht.css('height'))
+            height: parseInt(ht.css('height'), 10)
         });
     }
 });
