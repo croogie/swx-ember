@@ -1,7 +1,14 @@
 <div class="flex-container">
     <div class="flex-cell"><div class="bounding-box">
-        <h4>FILTER ({{#link-to 'project' 'filter'}}FullScreen{{/link-to}})</h4>
-        <p>lorem</p>
+        <h4>
+            FILTER ({{#link-to 'project' 'filter'}}FullScreen{{/link-to}})
+
+            <!-- Button trigger modal -->
+            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                Launch demo modal
+            </button>
+        </h4>
+
         {{#link-to 'spreadsheet' 'after'}}AFTER{{/link-to}}
     </div></div>
     <div class="flex-cell"><div class="bounding-box">
