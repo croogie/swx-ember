@@ -27,10 +27,10 @@ html {
       text-transform: uppercase;
       border-left: 1px solid $brdBrown;
       font-weight: bold;
-      color: $fOrange;
+      color: $fBrown;
 
       &:hover {
-        color: $fWhite;
+        color: $fOrange;
       }
     }
 
@@ -42,11 +42,6 @@ html {
         background-color: $bgWhite;
         color: $fOrange;
       }
-    }
-
-    li.disabled > a {
-      color: $fBrown;
-      &:hover { color: $fBrown; }
     }
   }
 
@@ -72,4 +67,36 @@ html {
 .navbar-fixed-bottom {
   min-height: $navbarBottomHeight;
   background-color: $bgBrown;
+
+  .tab {
+    display: inline-block;
+    line-height: $navbarBottomHeight;
+    border-right: 1px solid $brdBrown;
+    font-size: $font-size-small;
+    padding: 0 45px;
+    color: $fBrown;
+    cursor: pointer;
+
+    &:hover {
+      color: $fWhite;
+    }
+
+    &.active {
+      color: $fOrange;
+      line-height: $navbarBottomHeight - 4;
+      border-top: 4px solid $bgOrange;
+      background-color: $bgWhite;
+
+      &:hover {
+        color: $fOrange;
+      }
+    }
+  }
+}
+
+// Dropdown
+.dropdown-menu {
+  min-width: 80px;
+  padding: 0;
+  border-radius: 0;
 }
