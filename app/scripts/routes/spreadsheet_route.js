@@ -11,11 +11,6 @@ var data = {
         ['PEUGEOT 508',"8,2",180,"8,4",180,"7,8",180,"8,7",180,"8,2",180,"8,6",180]
     ],
     after: [
-        ['Filters applied:','','','','','','','','','','','',''],
-        ['Sex of Main Driver = "Male"'],
-        ['AND'],
-        ['Age of Main Driver IN ("Below 25", "25-34", "35-44")'],
-        [''],
         ['','Acceleration','','Roadholding','','Sportiness','','Braking','','Gearbox','','Steering',''],
         ['Model-Family of New Car','Mean','Unweighted Count','Mean','Unweighted Count','Mean','Unweighted Count','Mean','Unweighted Count','Mean','Unweighted Count','Mean','Unweighted Count'],
         ['VW PASSAT',"8,1",126,"8,6",126,"7,6",126,"8,8",126,"8,7",126,"8,9",126],
@@ -30,11 +25,21 @@ var data = {
 
 Spreadsheet.SpreadsheetRoute = Ember.Route.extend({
     model: function (params) {
+        data['name'] = params.name;
         return data[params.name];
     },
     setupController: function (controller, model) {
-        var application = this.controllerFor("spreadsheets");
-        application.set('model', model);
+        var spreadsheets = this.controllerFor("spreadsheets");
+        spreadsheets.set('model', model);
+
+        if (data['name'] == 'before') {
+            spreadsheets.set('filter', '<em>none</em>');
+        } else {
+            spreadsheets.set(
+                'filter',
+                'Sex of Main Driver <span>=</span> "Male" <span>AND</span> Age of Main Driver <span>IN</span> ("Below 25", "25-34", "35-44")'
+            );
+        }
     }
 });
 

@@ -95,9 +95,26 @@ html, body {
   border-bottom: 1px solid $brdGrey;
 }
 .excel-bar2 {
-  background: url(../images/excel_filter.png) 10px 3px no-repeat $bgWhite;
+  padding-left: 15px;
   height: 35px;
+  line-height: 30px;
   border-bottom: 1px solid $brdGrey;
+  background-color: $bgWhite;
+  color: $fGrey;
+
+  strong {
+    color: $fBrown;
+    font-weight: 700;
+  }
+  
+  span {
+    color: $fBlue;
+    font-weight: 400;
+  }
+
+  em {
+    color: #aaa;
+  }
 }
 
 @media (max-width: $screen-xs-max) {
