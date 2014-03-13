@@ -16,10 +16,11 @@ html, body {
   flex-direction: row;
   -webkit-flex-direction: row;
 }
+
 .flex-cols {
-   flex-direction: column;
-   -webkit-flex-direction: column;
- }
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
 
 .main-container {
   height: 100%;
@@ -41,7 +42,7 @@ html, body {
   padding: 7px;
   background-color: $bgGrey;
   -webkit-flex: 1;
-  flex:1;
+  flex: 1;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
@@ -80,7 +81,7 @@ html, body {
     -webkit-flex-direction: column;
     flex-direction: column;
     margin: 7px;
-    padding: 14px;
+    padding: 20px;
     background-color: $bgWhite;
     border: 1px solid $brdGrey;
     border-radius: 3px;
@@ -94,6 +95,7 @@ html, body {
   height: 40px;
   border-bottom: 1px solid $brdGrey;
 }
+
 .excel-bar2 {
   padding-left: 15px;
   height: 35px;
@@ -106,7 +108,7 @@ html, body {
     color: $fBrown;
     font-weight: 700;
   }
-  
+
   span {
     color: $fBlue;
     font-weight: 400;
@@ -114,6 +116,43 @@ html, body {
 
   em {
     color: #aaa;
+  }
+}
+
+article {
+  header {
+    font-weight: 800;
+    color: #4e4e4e;
+
+    h4 {
+      margin-top: 0;
+      img {
+        position: relative;
+        top: -2px;
+      }
+    }
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      list-style: none;
+      background: url(/images/icons/dot_list.png) 0px 9px no-repeat;
+      padding-left: 15px;
+      line-height: 1.8em;
+
+      a > i.glyphicon {
+        display: none;
+      }
+      a:hover {
+        text-decoration: none;
+
+        & > i.glyphicon {
+          display: inline-block;
+        }
+      }
+    }
   }
 }
 

@@ -1,26 +1,69 @@
 <div class="flex-container">
-    <div class="flex-cell"><div class="bounding-box">
-        <h4>
-            FILTER ({{#link-to 'project' 'filter'}}FullScreen{{/link-to}})
-
-            <!-- Button trigger modal -->
-            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
-                Launch demo modal
-            </button>
-        </h4>
-
-        {{#link-to 'spreadsheet' 'after'}}AFTER{{/link-to}}
-    </div></div>
-    <div class="flex-cell"><div class="bounding-box">
-        <h4>test 2</h4>
-        <p>lorem</p>
-    </div></div>
-    <div class="flex-cell"><div class="bounding-box">
-        <h4>test 3</h4>
-        <p>lorem</p>
-    </div></div>
-    <div class="flex-cell"><div class="bounding-box">
-        <h4>test 4</h4>
-        <p>lorem</p>
-    </div></div>
+    <div class="flex-cell">
+        <div class="bounding-box">
+            <article>
+                <header>
+                    <div class="icons pull-right">
+                        <a class="icon icon-01" href="javascript:void(0);"></a>
+                        <a class="icon icon-02" href="javascript:void(0);"></a>
+                        {{#link-to 'project' 'filter' class="icon icon-03"}}{{/link-to}}
+                    </div>
+                    <h4>Filter <img src="images/icons/box_filter.png" alt="Filter"/></h4>
+                </header>
+            </article>
+        </div>
+    </div>
+    <div class="flex-cell">
+        <div class="bounding-box">
+            <article>
+                <header>
+                    <div class="icons pull-right">
+                        <a class="icon icon-01" href="javascript:void(0);"></a>
+                        <a class="icon icon-02" href="javascript:void(0);"></a>
+                        {{#link-to 'project' 'filter' class="icon icon-03"}}{{/link-to}}
+                    </div>
+                    <h4>Columns <img src="images/icons/box_columns.png" alt="Columns"/></h4>
+                </header>
+                <ul>
+                    <li><a href="#">Acceleration <i class="glyphicon glyphicon-remove"></i></a></li>
+                    <li><a href="#">Gearchange <i class="glyphicon glyphicon-remove"></i></a></li>
+                    <li><a href="#">Roadholding <i class="glyphicon glyphicon-remove"></i></a></li>
+                    <li><a href="#">Sportiness <i class="glyphicon glyphicon-remove"></i></a></li>
+                    <li><a href="#">Steering <i class="glyphicon glyphicon-remove"></i></a></li>
+                    <li><a href="#">Braking <i class="glyphicon glyphicon-remove"></i></a></li>
+                </ul>
+            </article>
+        </div>
+    </div>
+    <div class="flex-cell">
+        <div class="bounding-box">
+            <article>
+                <header>
+                    <div class="icons pull-right">
+                        <a class="icon icon-01" href="javascript:void(0);"></a>
+                        <a class="icon icon-02" href="javascript:void(0);"></a>
+                        {{#link-to 'project' 'filter' class="icon icon-03"}}{{/link-to}}
+                    </div>
+                    <h4>Rows <img src="images/icons/box_rows.png" alt="Rows"/></h4>
+                </header>
+                <ul>
+                    <li><a href="#">Model-Family of New Car <i class="glyphicon glyphicon-remove"></i></a></li>
+                </ul>
+            </article>
+        </div>
+    </div>
+    <div class="flex-cell">
+        <div class="bounding-box">
+            <article>
+                <header>
+                    <div class="icons pull-right">
+                        <a class="icon icon-01" href="javascript:void(0);"></a>
+                        <a class="icon icon-02" href="javascript:void(0);"></a>
+                        {{#link-to 'project' 'filter' class="icon icon-03"}}{{/link-to}}
+                    </div>
+                    <h4>Slices <img src="images/icons/box_slices.png" alt="Slices"/></h4>
+                </header>
+            </article>
+        </div>
+    </div>
 </div>

@@ -1,0 +1,23 @@
+.icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+}
+.icon-01 {
+  background: url(/images/icons/projects_filter_icon.png) top left no-repeat;
+  &:hover {
+    background: url(/images/icons/projects_filter_icon.png) top left no-repeat;
+  }
+}
+.icon-02 {
+  background: url(/images/icons/projects_r_icon.png) top left no-repeat;
+  &:hover {
+    background: url(/images/icons/projects_r_icon.png) top left no-repeat;
+  }
+}
+.icon-03 {
+  background: url(/images/icons/projects_fullscreen_icon.png) top left no-repeat;
+  &:hover {
+    background: url(/images/icons/projects_fullscreen_icon_over.png) top left no-repeat;
+  }
+}

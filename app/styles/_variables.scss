@@ -21,3 +21,6 @@ $brdOrange:  #d6512c !default;
 
 // 2. Bootstrap overrides
 $font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$link-color:            #3D3D3D !default;
+$link-hover-color:      darken($link-color, 15%) !default;
