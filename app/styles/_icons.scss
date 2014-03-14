@@ -41,3 +41,51 @@
   width: 15px;
   height: 14px;
 }
+
+.subicon {
+  height: 40px;
+  width: 22px;
+  display: inline-block;
+  float: left;
+}
+.icon-export {
+  background: url(/images/icons/spreadsheet_normal.png) left center no-repeat;
+  a:hover & {
+    background: url(/images/icons/spreadsheet_over.png) left center no-repeat;
+  }
+}
+
+.icon-copy {
+  background: url(/images/icons/copy_normal.png) left center no-repeat;
+  a:hover & {
+    background: url(/images/icons/copy_over.png) left center no-repeat;
+  }
+}
+
+.icon-cut {
+  background: url(/images/icons/cut_normal.png) left center no-repeat;
+  a:hover & {
+    background: url(/images/icons/cut_over.png) left center no-repeat;
+  }
+}
+
+.icon-paste {
+  background: url(/images/icons/paste_normal.png) left center no-repeat;
+  a:hover & {
+    background: url(/images/icons/paste_over.png) left center no-repeat;
+  }
+}
+
+.icon-sort {
+  background: url(/images/icons/sort_normal.png) left center no-repeat;
+  a:hover & {
+    background: url(/images/icons/sort_over.png) left center no-repeat;
+  }
+}
+
+.icon-supress {
+  background: url(/images/icons/supress_normal.png) left center no-repeat;
+  a:hover & {
+    background: url(/images/icons/supress_over.png) left center no-repeat;
+  }
+}

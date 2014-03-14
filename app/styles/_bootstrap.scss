@@ -49,9 +49,13 @@ html {
     min-height: $navbarSubHeight;
     background-color: $bgWhite;
 
-    li > a {
+    li {
       line-height: 20px;
-      padding: ($navbarSubHeight - 20)/2 15px;
+    }
+
+    li > a {
+      line-height: 42px;
+      padding: 0 15px;
       font-size: $font-size-small;
     }
 
